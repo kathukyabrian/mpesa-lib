@@ -45,7 +45,7 @@ class MpesaTest {
         assert paymentResult.isSuccess();
         assert paymentResult.getPhoneNumber().equals("254708374149");
         assert paymentResult.getTransactionRef().equals("NLJ7RT61SV");
-        assert paymentResult.getAmount().equals(1.00);
+        assert paymentResult.getAmount().equals(1);
         assert paymentResult.getDescription().equals("The service request is processed successfully.");
         assert paymentResult.getCode().equals(0);
         assert paymentResult.getMerchantRequestId().equals("29115-34620561-1");

@@ -5,7 +5,7 @@
 
     <groupId>io.github.kathukyabrian</groupId>
     <artifactId>mpesa</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>mpesa</name>
     <description>easily integrate mpesa payments in your application.</description>

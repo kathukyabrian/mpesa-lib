@@ -2,18 +2,18 @@ package io.github.kathukyabrian.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.kathukyabrian.dto.*;
-import okhttp3.MediaType;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import io.github.kathukyabrian.config.ApplicationProperties;
 import io.github.kathukyabrian.constants.ServiceConstants;
 import io.github.kathukyabrian.core.factory.ServiceRepositoryFactory;
+import io.github.kathukyabrian.dto.*;
 import io.github.kathukyabrian.dto.result.CallBackItem;
 import io.github.kathukyabrian.dto.result.DarajaSTKCallBack;
 import io.github.kathukyabrian.dto.result.MpesaResult;
 import io.github.kathukyabrian.util.DarajaUtil;
 import io.github.kathukyabrian.util.HttpUtil;
+import okhttp3.MediaType;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -104,7 +104,7 @@ public class Mpesa {
                 }
 
                 if (callBackItem.getName().equals(ServiceConstants.MPESA_CALLBACK_AMOUNT_KEY)) {
-                    result.setAmount((Double) callBackItem.getValue());
+                    result.setAmount(((Number) callBackItem.getValue()).intValue());
                 }
 
                 if (callBackItem.getName().equals(ServiceConstants.MPESA_CALLBACK_PHONE_NUMBER_KEY)) {

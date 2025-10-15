@@ -10,7 +10,7 @@ public class MpesaPaymentResult {
 
     private String description;
 
-    private Double amount;
+    private Integer amount;
 
     private String transactionRef;
 
