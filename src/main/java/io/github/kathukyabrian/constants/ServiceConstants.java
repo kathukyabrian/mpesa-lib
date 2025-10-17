@@ -17,6 +17,4 @@ public class ServiceConstants {
     public static String MPESA_CALLBACK_PHONE_NUMBER_KEY = "PhoneNumber";
     public static String MPESA_CALLBACK_AMOUNT_KEY = "Amount";
     public static String MPESA_CALLBACK_REF_NO_KEY = "MpesaReceiptNumber";
-
-
 }
