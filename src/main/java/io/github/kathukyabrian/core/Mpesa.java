@@ -143,7 +143,7 @@ public class Mpesa {
             QueryTransactionResponse queryTransactionResponse = objectMapper.readValue(response, QueryTransactionResponse.class);
             return new MpesaQueryTransactionResponse(originatorConversationId, queryTransactionResponse.getResponseCode(), queryTransactionResponse.getResponseDescription(), "0".equals(queryTransactionResponse.getResponseCode()));
         } catch (IOException ex) {
-            return new MpesaQueryTransactionResponse(originatorConversationId, "FAILED", ex.getMessage(), false);
+            return new MpesaQueryTransactionResponse(originatorConversationId, "-1", ex.getMessage(), false);
         }
     }
 }
