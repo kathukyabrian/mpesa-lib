@@ -33,6 +33,7 @@ public class ConfigUtil {
         applicationProperties.setConsumerSecret(properties.getProperty(ServiceConstants.CONSUMER_SECRET_CONFIG_KEY));
         applicationProperties.setAuthUrl(properties.getProperty(ServiceConstants.AUTH_URL_CONFIG_KEY));
         applicationProperties.setPaymentUrl(properties.getProperty(ServiceConstants.PAYMENT_URL_CONFIG_KEY));
+        applicationProperties.setQueryUrl(properties.getProperty(ServiceConstants.QUERY_URL_CONFIG_KEY));
 
         return applicationProperties;
     }

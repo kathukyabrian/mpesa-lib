@@ -13,4 +13,5 @@ public class ApplicationProperties {
     private String consumerSecret;
     private String authUrl;
     private String paymentUrl;
+    private String queryUrl;
 }

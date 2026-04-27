@@ -13,6 +13,7 @@ public class ServiceConstants {
     public static String CONSUMER_SECRET_CONFIG_KEY = "consumer-secret";
     public static String AUTH_URL_CONFIG_KEY = "auth-url";
     public static String PAYMENT_URL_CONFIG_KEY = "payment-url";
+    public static String QUERY_URL_CONFIG_KEY = "query-url";
 
     public static String MPESA_CALLBACK_PHONE_NUMBER_KEY = "PhoneNumber";
     public static String MPESA_CALLBACK_AMOUNT_KEY = "Amount";

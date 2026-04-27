@@ -33,5 +33,6 @@ public class ConfigUtilTest {
         assert applicationProperties.getConsumerSecret() != null;
         assert applicationProperties.getAuthUrl() != null;
         assert applicationProperties.getPaymentUrl() != null;
+        // queryUrl can be null - ignore test
     }
 }
